@@ -24,21 +24,3 @@ struct Movie: Decodable {
         case imdbID = "imdbID"
     }
 }
-
-//struct Movie: Decodable {
-//    
-//    let imdbID: String
-//    let title: String
-//    let year: String
-//    let poster: String
-//    let type: String
-//    
-//    private enum CodingKeys: String, CodingKey {
-//        
-//        case imdbID
-//        case title = "Title"
-//        case poster = "Poster"
-//        case year = "Year"
-//        case type = "Type"
-//    }
-//}
