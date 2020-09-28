@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MoviesLazyGridApp: App {
+    
+    @StateObject var store = MovieStore(search: "Batman")
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: store)
         }
     }
 }
