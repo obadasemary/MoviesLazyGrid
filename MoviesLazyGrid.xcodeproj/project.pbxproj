@@ -13,6 +13,7 @@
 		AF6C749E252010D60018B4E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6C749D252010D60018B4E1 /* Preview Assets.xcassets */; };
 		AF6C74B0252104470018B4E1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C74AF252104470018B4E1 /* Movie.swift */; };
 		AF6C74B4252104550018B4E1 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C74B3252104550018B4E1 /* MovieResponse.swift */; };
+		AF6C74B72521F1390018B4E1 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C74B62521F1390018B4E1 /* MovieStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AF6C749F252010D60018B4E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF6C74AF252104470018B4E1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		AF6C74B3252104550018B4E1 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		AF6C74B62521F1390018B4E1 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +58,11 @@
 		AF6C7495252010D10018B4E1 /* MoviesLazyGrid */ = {
 			isa = PBXGroup;
 			children = (
+				AF6C7496252010D10018B4E1 /* MoviesLazyGridApp.swift */,
+				AF6C74B92521F46E0018B4E1 /* View */,
 				AF6C74AD2521041A0018B4E1 /* ViewModel */,
 				AF6C74AE252104210018B4E1 /* Services */,
 				AF6C74AC252104100018B4E1 /* Model */,
-				AF6C7496252010D10018B4E1 /* MoviesLazyGridApp.swift */,
-				AF6C7498252010D10018B4E1 /* ContentView.swift */,
 				AF6C749A252010D60018B4E1 /* Assets.xcassets */,
 				AF6C749F252010D60018B4E1 /* Info.plist */,
 				AF6C749C252010D60018B4E1 /* Preview Content */,
@@ -95,8 +97,17 @@
 		AF6C74AE252104210018B4E1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AF6C74B62521F1390018B4E1 /* MovieStore.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		AF6C74B92521F46E0018B4E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C7498252010D10018B4E1 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				AF6C74B4252104550018B4E1 /* MovieResponse.swift in Sources */,
 				AF6C7497252010D10018B4E1 /* MoviesLazyGridApp.swift in Sources */,
 				AF6C74B0252104470018B4E1 /* Movie.swift in Sources */,
+				AF6C74B72521F1390018B4E1 /* MovieStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
