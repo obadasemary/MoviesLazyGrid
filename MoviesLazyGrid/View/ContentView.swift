@@ -12,14 +12,34 @@ struct ContentView: View {
     // MARK: - PROPERTIES
     
     @ObservedObject var store: MovieStore
+    let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
     
     // MARK: - BODY
     
     var body: some View {
-        VStack {
-            Text("Hello, world!")
-                .padding()
-            
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    
+                    ForEach(store.movies ?? [Movie](), id: \.imdbID) { movie in
+                        
+                        NavigationLink(destination: MovieDetailsView(movie: movie)) {
+                        
+                            VStack {
+                                
+                                URLImageView(url: movie.poster)
+                                    .frame(width: 100, height: 200)
+                                Text(movie.title)
+                                    .frame(maxHeight: .infinity, alignment: .top)
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationBarTitle("Movies")
+        }
+        .onAppear {
+            store.getAll()
         }
     }
 }
