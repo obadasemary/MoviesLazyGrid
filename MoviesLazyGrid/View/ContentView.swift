@@ -36,7 +36,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationBarTitle("Movies")
+            .navigationBarTitle("Movies", displayMode: .inline)
         }
         .onAppear {
             store.getAll()
