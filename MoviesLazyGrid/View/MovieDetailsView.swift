@@ -30,6 +30,7 @@ struct MovieDetailsView: View {
                     Spacer()
                 }
             }
+            .navigationBarTitle(movie.title, displayMode: .inline)
         }
     }
 }
