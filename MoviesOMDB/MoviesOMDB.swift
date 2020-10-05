@@ -1,6 +1,6 @@
 //
-//  MoviesLazyGridApp.swift
-//  MoviesLazyGrid
+//  MoviesOMDB.swift
+//  MoviesOMDB
 //
 //  Created by Abdelrahman Mohamed on 27.09.2020.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MoviesLazyGridApp: App {
+struct MoviesOMDB: App {
     
     @StateObject var store = MovieStore(search: "Batman")
     

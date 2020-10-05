@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF6C7497252010D10018B4E1 /* MoviesLazyGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C7496252010D10018B4E1 /* MoviesLazyGridApp.swift */; };
+		AF6C7497252010D10018B4E1 /* MoviesOMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C7496252010D10018B4E1 /* MoviesOMDB.swift */; };
 		AF6C7499252010D10018B4E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C7498252010D10018B4E1 /* ContentView.swift */; };
 		AF6C749B252010D60018B4E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6C749A252010D60018B4E1 /* Assets.xcassets */; };
 		AF6C749E252010D60018B4E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6C749D252010D60018B4E1 /* Preview Assets.xcassets */; };
@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AF6C7493252010D10018B4E1 /* MoviesLazyGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesLazyGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF6C7496252010D10018B4E1 /* MoviesLazyGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesLazyGridApp.swift; sourceTree = "<group>"; };
+		AF6C7493252010D10018B4E1 /* MoviesOMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesOMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6C7496252010D10018B4E1 /* MoviesOMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesOMDB.swift; sourceTree = "<group>"; };
 		AF6C7498252010D10018B4E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF6C749A252010D60018B4E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF6C749D252010D60018B4E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		AF6C748A252010D00018B4E1 = {
 			isa = PBXGroup;
 			children = (
-				AF6C7495252010D10018B4E1 /* MoviesLazyGrid */,
+				AF6C7495252010D10018B4E1 /* MoviesOMDB */,
 				AF6C7494252010D10018B4E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +56,15 @@
 		AF6C7494252010D10018B4E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF6C7493252010D10018B4E1 /* MoviesLazyGrid.app */,
+				AF6C7493252010D10018B4E1 /* MoviesOMDB.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AF6C7495252010D10018B4E1 /* MoviesLazyGrid */ = {
+		AF6C7495252010D10018B4E1 /* MoviesOMDB */ = {
 			isa = PBXGroup;
 			children = (
-				AF6C7496252010D10018B4E1 /* MoviesLazyGridApp.swift */,
+				AF6C7496252010D10018B4E1 /* MoviesOMDB.swift */,
 				AF6C74B92521F46E0018B4E1 /* View */,
 				AF6C74AD2521041A0018B4E1 /* ViewModel */,
 				AF6C74AE252104210018B4E1 /* Services */,
@@ -73,7 +73,7 @@
 				AF6C749F252010D60018B4E1 /* Info.plist */,
 				AF6C749C252010D60018B4E1 /* Preview Content */,
 			);
-			path = MoviesLazyGrid;
+			path = MoviesOMDB;
 			sourceTree = "<group>";
 		};
 		AF6C749C252010D60018B4E1 /* Preview Content */ = {
@@ -122,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF6C7492252010D10018B4E1 /* MoviesLazyGrid */ = {
+		AF6C7492252010D10018B4E1 /* MoviesOMDB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF6C74A2252010D60018B4E1 /* Build configuration list for PBXNativeTarget "MoviesLazyGrid" */;
+			buildConfigurationList = AF6C74A2252010D60018B4E1 /* Build configuration list for PBXNativeTarget "MoviesOMDB" */;
 			buildPhases = (
 				AF6C748F252010D10018B4E1 /* Sources */,
 				AF6C7490252010D10018B4E1 /* Frameworks */,
@@ -134,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = MoviesLazyGrid;
+			name = MoviesOMDB;
 			productName = MoviesLazyGrid;
-			productReference = AF6C7493252010D10018B4E1 /* MoviesLazyGrid.app */;
+			productReference = AF6C7493252010D10018B4E1 /* MoviesOMDB.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AF6C748E252010D00018B4E1 /* Build configuration list for PBXProject "MoviesLazyGrid" */;
+			buildConfigurationList = AF6C748E252010D00018B4E1 /* Build configuration list for PBXProject "MoviesOMDB" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF6C7492252010D10018B4E1 /* MoviesLazyGrid */,
+				AF6C7492252010D10018B4E1 /* MoviesOMDB */,
 			);
 		};
 /* End PBXProject section */
@@ -193,7 +193,7 @@
 				AFF1524F2522021F00D42942 /* MovieDetailsView.swift in Sources */,
 				AF6C74B4252104550018B4E1 /* MovieResponse.swift in Sources */,
 				AFF152492521FA9900D42942 /* ImageLoader.swift in Sources */,
-				AF6C7497252010D10018B4E1 /* MoviesLazyGridApp.swift in Sources */,
+				AF6C7497252010D10018B4E1 /* MoviesOMDB.swift in Sources */,
 				AF6C74B0252104470018B4E1 /* Movie.swift in Sources */,
 				AF6C74B72521F1390018B4E1 /* MovieStore.swift in Sources */,
 			);
@@ -324,16 +324,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MoviesLazyGrid/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MoviesOMDB/Preview Content\"";
 				DEVELOPMENT_TEAM = PTDDPSLG9G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MoviesLazyGrid/Info.plist;
+				INFOPLIST_FILE = MoviesOMDB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vngrs.MoviesLazyGrid;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vngrs.MoviesOMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,16 +346,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MoviesLazyGrid/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MoviesOMDB/Preview Content\"";
 				DEVELOPMENT_TEAM = PTDDPSLG9G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MoviesLazyGrid/Info.plist;
+				INFOPLIST_FILE = MoviesOMDB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vngrs.MoviesLazyGrid;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vngrs.MoviesOMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,7 +365,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF6C748E252010D00018B4E1 /* Build configuration list for PBXProject "MoviesLazyGrid" */ = {
+		AF6C748E252010D00018B4E1 /* Build configuration list for PBXProject "MoviesOMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF6C74A0252010D60018B4E1 /* Debug */,
@@ -374,7 +374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF6C74A2252010D60018B4E1 /* Build configuration list for PBXNativeTarget "MoviesLazyGrid" */ = {
+		AF6C74A2252010D60018B4E1 /* Build configuration list for PBXNativeTarget "MoviesOMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF6C74A3252010D60018B4E1 /* Debug */,

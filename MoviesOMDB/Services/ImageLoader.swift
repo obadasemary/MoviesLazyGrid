@@ -1,6 +1,6 @@
 //
 //  ImageLoader.swift
-//  MoviesLazyGrid
+//  MoviesOMDB
 //
 //  Created by Abdelrahman Mohamed on 28.09.2020.
 //
