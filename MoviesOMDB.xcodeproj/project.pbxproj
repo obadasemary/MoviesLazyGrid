@@ -67,11 +67,15 @@
 			isa = PBXGroup;
 			children = (
 				AFA24650252AAE7A007C90DC /* Utills */,
-				AF6C7496252010D10018B4E1 /* MoviesOMDB.swift */,
-				AF6C74B92521F46E0018B4E1 /* View */,
 				AF6C74AD2521041A0018B4E1 /* ViewModel */,
-				AF6C74AE252104210018B4E1 /* Services */,
 				AF6C74AC252104100018B4E1 /* Model */,
+				AF6C74AE252104210018B4E1 /* Services */,
+				AFA24654252BEACB007C90DC /* Loaders */,
+				AFA24655252BEADD007C90DC /* Controls */,
+				AFA24656252BEAEE007C90DC /* Extensions */,
+				AFA24657252BEAFC007C90DC /* Screens */,
+				AF6C74B92521F46E0018B4E1 /* View */,
+				AF6C7496252010D10018B4E1 /* MoviesOMDB.swift */,
 				AF6C749A252010D60018B4E1 /* Assets.xcassets */,
 				AF6C749F252010D60018B4E1 /* Info.plist */,
 				AF6C749C252010D60018B4E1 /* Preview Content */,
@@ -107,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				AF6C74B62521F1390018B4E1 /* MovieStore.swift */,
-				AFF152482521FA9900D42942 /* ImageLoader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -117,7 +120,6 @@
 			children = (
 				AF6C7498252010D10018B4E1 /* ContentView.swift */,
 				AFF1524E2522021F00D42942 /* MovieDetailsView.swift */,
-				AFF1524B2521FC9800D42942 /* URLImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +130,36 @@
 				AFA24651252AAEA1007C90DC /* Constants.swift */,
 			);
 			path = Utills;
+			sourceTree = "<group>";
+		};
+		AFA24654252BEACB007C90DC /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				AFF152482521FA9900D42942 /* ImageLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		AFA24655252BEADD007C90DC /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				AFF1524B2521FC9800D42942 /* URLImageView.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		AFA24656252BEAEE007C90DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AFA24657252BEAFC007C90DC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
