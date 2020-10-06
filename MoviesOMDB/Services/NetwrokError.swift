@@ -8,7 +8,6 @@
 import Foundation
 
 enum NetwrokError: Error {
-    
     case badURL
     case noData
     case decodingError
