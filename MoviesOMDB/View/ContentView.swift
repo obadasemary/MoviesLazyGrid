@@ -11,7 +11,7 @@ struct ContentView: View {
     
     // MARK: - PROPERTIES
     
-    @ObservedObject var store: MovieStore
+    @ObservedObject var store: HTTPClient
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
     
     // MARK: - BODY
@@ -46,6 +46,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(store: MovieStore(search: "Batman"))
+        ContentView(store: HTTPClient(search: "Batman"))
     }
 }
