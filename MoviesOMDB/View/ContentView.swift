@@ -40,9 +40,20 @@ struct ContentView: View {
         }
         .onAppear {
             store.getAll()
+            HTTPClient().getMoviesBy(search: "Marvel") { result in
+                
+                switch result {
+                case .success(let movies):
+                    print(movies)
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
         }
     }
 }
+
+// MARK: - PREVIEW
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
