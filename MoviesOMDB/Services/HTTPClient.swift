@@ -9,17 +9,15 @@ import Foundation
 
 class HTTPClient: ObservableObject {
     
-    var path = "http://www.omdbapi.com/?s="
-    var search = ""
-    var apiKeyString = "&apikey="
-//    var apikey = "a22cefd9"
-    var fullPath: String
+    var fullPath: String?
     
     // MARK: - INIT
     
+    init() {}
+    
     init(search: String) {
         
-        fullPath = path + search + apiKeyString + Constants.API_KEY
+        fullPath = Constants.path + search + Constants.apiKeyString + Constants.API_KEY
     }
     
     @Published var movies: [Movie]? = [Movie]()
@@ -28,7 +26,7 @@ class HTTPClient: ObservableObject {
     
     func getAll() {
         
-        guard let url = URL(string: fullPath) else {
+        guard let url = URL(string: fullPath ?? "") else {
             
             fatalError("Invalid URL")
         }
@@ -53,9 +51,7 @@ class HTTPClient: ObservableObject {
     
     func getMoviesBy(search: String, completion: @escaping (Result<[Movie]?, NetwrokError>) -> Void) {
         
-        fullPath = path + search + apiKeyString + Constants.API_KEY
-        
-        guard let url = URL(string: fullPath) else {
+        guard let url = URL.forMoviesByName(search) else {
            
             return completion(.failure(.badURL))
         }
