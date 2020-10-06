@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct MoviesOMDB: App {
     
-    @StateObject var store = MovieStore(search: "Batman")
+    @StateObject var store = HTTPClient(search: "Batman")
     
     var body: some Scene {
         WindowGroup {
