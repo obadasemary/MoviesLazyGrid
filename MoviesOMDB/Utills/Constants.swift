@@ -10,4 +10,7 @@ import Foundation
 struct Constants {
     
     static let API_KEY = "a22cefd9"
+    
+    static let path = "http://www.omdbapi.com/?s="
+    static let apiKeyString = "&apikey="
 }
