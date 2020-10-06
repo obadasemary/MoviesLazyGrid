@@ -11,6 +11,13 @@ struct MovieListScreen: View {
     
     // MARK: - PROPERTIES
     
+    @ObservedObject private var movieListVM: MovieListViewModel
+    
+    init() {
+        self.movieListVM = MovieListViewModel()
+        self.movieListVM.searchByName("batman")
+    }
+    
     // MARK: - BODY
     
     var body: some View {
