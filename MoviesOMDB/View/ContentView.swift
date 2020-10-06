@@ -40,15 +40,15 @@ struct ContentView: View {
         }
         .onAppear {
             store.getAll()
-            HTTPClient().getMoviesBy(search: "Marvel") { result in
-                
-                switch result {
-                case .success(let movies):
-                    print(movies)
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            }
+//            HTTPClient().getMoviesBy(search: "Marvel") { result in
+//                
+//                switch result {
+//                case .success(let movies):
+//                    print(movies)
+//                case .failure(let error):
+//                    print(error.localizedDescription)
+//                }
+//            }
         }
     }
 }
