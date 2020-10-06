@@ -21,7 +21,12 @@ struct MovieListScreen: View {
     // MARK: - BODY
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            MovieListView(movies: self.movieListVM.moviesVM)
+                .listStyle(InsetGroupedListStyle())
+                .navigationBarTitle("Movies")
+        }
+        .embadNavigationView()
     }
 }
 
