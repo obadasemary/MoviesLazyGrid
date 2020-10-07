@@ -21,6 +21,7 @@ struct MovieListScreen: View {
     // MARK: - BODY
     
     var body: some View {
+        
         VStack {
             
             TextField("Search", text: $movieName) { _ in
