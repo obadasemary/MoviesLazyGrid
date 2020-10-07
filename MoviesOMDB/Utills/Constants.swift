@@ -11,6 +11,7 @@ struct Constants {
     
     static let API_KEY = "a22cefd9"
     
-    static let path = "http://www.omdbapi.com/?s="
+    static let pathS = "http://www.omdbapi.com/?s="
+    static let pathI = "http://www.omdbapi.com/?i="
     static let apiKeyString = "&apikey="
 }
