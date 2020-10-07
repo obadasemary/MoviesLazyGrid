@@ -7,9 +7,10 @@
 
 import Foundation
 
-class MovieDetailViewModel: ViewModelBase {
+class MovieDetailViewModel: ObservableObject {
     
     private var movieDetail: MovieDetail?
+    @Published var loadingState = LoadaingState.loading
     
     private var httpClient = HTTPClient()
     
@@ -19,8 +20,6 @@ class MovieDetailViewModel: ViewModelBase {
     }
     
     func getDetailsByImdbId(imdbId: String) {
-        
-        self.loadingState = .loading
         
         httpClient.getMovieDetailsBy(imdbId: imdbId) { result in
             
