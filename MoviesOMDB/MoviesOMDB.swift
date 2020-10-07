@@ -10,12 +10,9 @@ import SwiftUI
 @main
 struct MoviesOMDB: App {
     
-//    @StateObject var store = HTTPClient(search: "Batman")
-    
     var body: some Scene {
         WindowGroup {
             MovieListScreen()
-//            ContentView(store: store)
         }
     }
 }
