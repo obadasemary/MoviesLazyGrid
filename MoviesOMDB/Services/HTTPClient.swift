@@ -17,7 +17,7 @@ class HTTPClient: ObservableObject {
     
     init(search: String) {
         
-        fullPath = Constants.path + search + Constants.apiKeyString + Constants.API_KEY
+        fullPath = Constants.pathS + search + Constants.apiKeyString + Constants.API_KEY
     }
     
     @Published var movies: [Movie]? = [Movie]()
@@ -69,6 +69,32 @@ class HTTPClient: ObservableObject {
             }
             
             completion(.success(movieResponse.movies))
+            
+        }.resume()
+    }
+    
+    // MARK: - Get Movie Details By Movie imdbId
+    
+    func getMovieDetailsBy(imdbId: String, completion: @escaping (Result<MovieDetail, NetwrokError>) -> Void) {
+        
+        guard let url = URL.forMovieByImdbId(imdbId) else {
+           
+            return completion(.failure(.badURL))
+        }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            guard let data = data, error == nil else {
+                
+                return completion(.failure(.noData))
+            }
+            
+            guard let movieDetail = try? JSONDecoder().decode(MovieDetail.self, from: data) else {
+                
+                return completion(.failure(.decodingError))
+            }
+            
+            completion(.success(movieDetail))
             
         }.resume()
     }
