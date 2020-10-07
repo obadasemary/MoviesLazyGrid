@@ -11,10 +11,30 @@ struct MovieDetailScreen: View {
     
     // MARK: - PROPERTIES
     
+    let imdbId: String
+    @ObservedObject var movieDetailVM = MovieDetailViewModel()
+    
     // MARK: - BODY
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            
+            if self.movieDetailVM.loadingState == .success {
+                MovieDetailView(movieDetailVM: movieDetailVM)
+            } else if self.movieDetailVM.loadingState == .failed {
+                FailedView()
+            } else if self.movieDetailVM.loadingState == .loading {
+                Spacer()
+                LoadingView()
+                Spacer()
+            }
+        }
+        
+        .onAppear {
+            self.movieDetailVM.getDetailsByImdbId(imdbId: self.imdbId)
+        }
+        
     }
 }
 
@@ -22,6 +42,6 @@ struct MovieDetailScreen: View {
 
 struct MovieDetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailScreen()
+        MovieDetailScreen(imdbId: "tt4154796")
     }
 }
