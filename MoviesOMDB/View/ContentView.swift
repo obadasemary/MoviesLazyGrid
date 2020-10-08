@@ -11,7 +11,7 @@ struct ContentView: View {
     
     // MARK: - PROPERTIES
     
-    @ObservedObject var store: MovieStore
+    @ObservedObject var store: HTTPClient
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
     
     // MARK: - BODY
@@ -40,12 +40,23 @@ struct ContentView: View {
         }
         .onAppear {
             store.getAll()
+//            HTTPClient().getMoviesBy(search: "Marvel") { result in
+//                
+//                switch result {
+//                case .success(let movies):
+//                    print(movies)
+//                case .failure(let error):
+//                    print(error.localizedDescription)
+//                }
+//            }
         }
     }
 }
 
+// MARK: - PREVIEW
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(store: MovieStore(search: "Batman"))
+        ContentView(store: HTTPClient(search: "Batman"))
     }
 }

@@ -41,6 +41,6 @@ struct URLImageView: View {
 
 struct URLImageView_Previews: PreviewProvider {
     static var previews: some View {
-        URLImageView(url: "https://m.media-amazon.com/images/M/MV5BOTM3MTRkZjQtYjBkMy00YWE1LTkxOTQtNDQyNGY0YjYzNzAzXkEyXkFqcGdeQXVyOTgwMzk1MTA@._V1_SX300.jpg")
+        URLImageView(url: "https://images.unsplash.com/photo-1566470708857-4976489d9f41?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80")
     }
 }
