@@ -19,6 +19,8 @@ class MovieDetailViewModel: ObservableObject {
         self.movieDetail = movieDetail
     }
     
+    /// get Details By ImdbId
+    /// - Parameter imdbId: imdbId 
     func getDetailsByImdbId(imdbId: String) {
         
         httpClient.getMovieDetailsBy(imdbId: imdbId) { result in
