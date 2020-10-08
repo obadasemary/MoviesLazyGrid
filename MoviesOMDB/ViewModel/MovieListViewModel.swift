@@ -12,6 +12,8 @@ class MovieListViewModel: ViewModelBase {
     @Published var moviesVM = [MovieViewModel]()
     let httpClient = HTTPClient()
     
+    /// search By Name
+    /// - Parameter name: movie name
     func searchByName(_ name: String) {
         
         if name.isEmpty {
