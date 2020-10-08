@@ -24,6 +24,7 @@ class HTTPClient: ObservableObject {
     
     // MARK: - Get All
     
+    /// Get All
     func getAll() {
         
         guard let url = URL(string: fullPath ?? "") else {
@@ -49,6 +50,10 @@ class HTTPClient: ObservableObject {
     
     // MARK: - Get Movies By Movie Name
     
+    /// Get Movies By Movie Name
+    /// - Parameters:
+    ///   - search: movie name
+    ///   - completion: completion description
     func getMoviesBy(search: String, completion: @escaping (Result<[Movie]?, NetwrokError>) -> Void) {
         
         guard let url = URL.forMoviesByName(search) else {
@@ -75,6 +80,10 @@ class HTTPClient: ObservableObject {
     
     // MARK: - Get Movie Details By Movie imdbId
     
+    /// Get Movie Details By Movie imdbId
+    /// - Parameters:
+    ///   - imdbId: imdbId
+    ///   - completion: completion description
     func getMovieDetailsBy(imdbId: String, completion: @escaping (Result<MovieDetail, NetwrokError>) -> Void) {
         
         guard let url = URL.forMovieByImdbId(imdbId) else {
