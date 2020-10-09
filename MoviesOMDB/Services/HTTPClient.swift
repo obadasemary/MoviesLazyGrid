@@ -25,7 +25,7 @@ class HTTPClient: ObservableObject {
     // MARK: - Get All
     
     /// Get All
-    @available(*, deprecated, message: "use get Movies by instead of this func")
+    @available(*, deprecated, message: "use get Movies by instead of this func", renamed: "getMoviesBy")
     func getAll() {
         
         guard let url = URL(string: fullPath ?? "") else {
